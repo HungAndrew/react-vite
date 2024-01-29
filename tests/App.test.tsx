@@ -1,12 +1,12 @@
-import { render, screen } from '@testing-library/react'
-import App from '../src/App'
+import { render, screen } from "@testing-library/react";
+import App from "../src/App";
 
-describe('App', () => {
-    it('renders the App component', () => {
-        render(<App />)
+describe("App", () => {
+    it("renders the App component", () => {
+        render(<App />);
 
         screen.debug(); // prints out the jsx in the App component unto the command line
 
-        expect(screen.getByText('count is 0')).toBeInTheDocument()
+        expect(screen.getByText("count is 0")).toBeInTheDocument();
     });
-})
+});
